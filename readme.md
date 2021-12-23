@@ -45,7 +45,6 @@
 <h2 id="projeto"> 💻 Projeto </h2>
 
 <p>Projeto criado com intuito de calcular o índice de massa corporal usando HTML, CSS e Javascript.</p> 
-<br>
 <hr>
 <br>
 <p> Criado por Lucas Freitas 🖖🏽 | <a href="https://www.linkedin.com/in/lucasfreitas01/"> Faça contato comigo </a> <p> 
