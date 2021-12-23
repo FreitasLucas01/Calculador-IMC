@@ -1,4 +1,4 @@
-<p align="center"><img align="center" src="./img/bola1.png"> <br> <br> <br></p>
+<p align="center"><img align="center" src="./img/bola1.png"> <br> <br> </p>
 
 <h1 align="center"> Calculadora IMC </h1>
 
