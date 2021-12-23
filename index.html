@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="./img/bola.png">
+    <link rel="stylesheet" href="./css/style.css" />
+    <script src="./js/script.js" defer></script>
+    <title>Calculadora IMC</title>
+  </head>
+
+  <body>
+    <main>
+      <div id="container">
+        <div id="divMulher">
+          <img src="./img/mulher.png" alt="" />
+        </div>
+        <div id="divIMC">
+          <h1>CALCULE O SEU IMC</h1>
+          <div class="horizontalLine"></div>
+          <form id="form">
+            <div id="divForm">
+              <div class="formFlex">
+                <label for="input-weight">PESO</label>
+                <input type="text" id="input-weight" placeholder="Ex: 120" />
+              </div>
+              <div class="formFlex">
+                <label for="input-height">ALTURA</label>
+                <input type="text" id="input-height" placeholder="Ex: 1.80" />
+              </div>
+            </div>
+            <button type="submit">CALCULAR</button>
+          </form>
+          <div id="resultado"></div>
+          <h2>TABELA IMC</h2>
+          <div id="containerListIMC">
+            <div id="listIMC">
+              <div id="leftListIMC">
+                <p>Menos do que 18.5</p>
+                <hr class="dotLineLeft" />
+                <p>Entre 18.5 e 24.9</p>
+                <hr class="dotLineLeft" />
+                <p>Entre 25 e 29.9</p>
+                <hr class="dotLineLeft" />
+                <p>Entre 30 e 34.9</p>
+                <hr class="dotLineLeft" />
+                <p>Entre 35 e 39.9</p>
+                <hr class="dotLineLeft" />
+                <p>Mais do que 40</p>
+                <hr class="dotLineLeft" />
+              </div>
+              <div id="rightListIMC">
+                <p>Abaixo do peso</p>
+                <hr class="dotLineRigth" />
+                <p>Peso normal</p>
+                <hr class="dotLineRigth" />
+                <p>Sobrepeso</p>
+                <hr class="dotLineRigth" />
+                <p>Obesidade grau 1</p>
+                <hr class="dotLineRigth" />
+                <p>Obesidade grau 2</p>
+                <hr class="dotLineRigth" />
+                <p>Obesidade grau 3</p>
+                <hr class="dotLineRigth" />
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="divHomem">
+          <img src="./img/homem.png" alt="" />
+        </div>
+        <div id="mobileImg">
+          <img src="./img/ambos.png" alt="">
+        </div>
+      </div>
+    </main>
+  </body>
+</html>

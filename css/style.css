@@ -1,0 +1,586 @@
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Be+Vietnam:ital,wght@0,100;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: #FDEFDD;
+}
+
+p::selection , h1::selection, h2::selection, label::selection, input::selection, button::selection{
+    background-color: #EFD3B2;
+    color: #E95B38;
+}
+
+#container{
+    position: relative;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#divMulher{
+    margin-top: 150px;
+    margin-left: 20px;
+}
+
+#divHomem{
+    margin-top: 100px;
+    margin-right: 20px;
+}
+
+#divMulher img , #divHomem img{
+    width: 100%;
+}
+
+.horizontalLine{
+    width: 100%;
+    height: 1px;
+    background-color: #E95B38;
+}
+
+#divIMC{
+    position: relative;
+    width: 27.7%;
+    bottom: 100px;
+    border-radius: 15px;
+    font-family: "Amatic SC";
+    text-align: center;
+    color: #EE603C;
+    background-color: #FFFFFF;
+    padding-bottom: 40px;
+    margin: 0 40px;
+}
+
+#divIMC h1{
+    padding: 10px;
+    font-size: 39px;
+    letter-spacing: 5px;
+}
+
+#divIMC label{
+    margin-top: 40px;
+    font-size: 34px;
+    font-weight: bolder;
+    letter-spacing: 3px;
+}
+
+#divIMC p{
+    font-family: Be Vietnam;
+    font-size: 16.5px;
+}
+
+#divIMC h2{
+    font-family: Amatic SC;
+    font-size: 34px;
+    letter-spacing: 3px;
+    margin: 50px 0 20px 0;
+}
+
+#resultado{
+    max-width: 73%;
+    display: none;
+    margin: auto;
+    margin: 20px auto 0 auto;
+    height: 40px;
+    border-radius: 5px;
+    font-family: Be Vietnam;
+    color: #FFFFFF;
+}
+
+#resultado p{
+    font-size: 14px;
+    text-align: center;
+    line-height: 40px;
+}
+
+#divForm{
+    width: 100%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.formFlex{
+    width: 41%;
+    display: flex;
+    flex-direction: column;
+}
+
+button{ 
+    font-family: "Amatic SC";
+    letter-spacing: 2px;
+    border: none;
+    border-radius: 5px;
+    height: 40px;
+    width: 30%;
+    font-size: 30px;
+    font-weight: bolder;
+    color: #FFFFFF;
+    background-color: #E95B38;
+    margin-top: 20px;
+}
+
+button:hover{
+    cursor: pointer;
+    background-color: #FBD9D0;
+    color: #E95B38;
+}
+
+input{
+    font-family: Be Vietnam;
+    font-size: 16px;
+    padding-left: 10px;
+    height: 40px;
+    background-color: #FBD9D0;
+    border: none;
+    border-radius: 5px;
+    color: #E95B38;
+}
+
+input::-webkit-input-placeholder{
+    font-family: Be Vietnam;
+    color: #D29F78;
+}
+
+input:focus{
+    outline: 1px solid #E95B38;
+}
+
+#listIMC{
+    text-align: left;
+    display: flex;
+}
+
+#leftListIMC{
+    margin: auto;
+    width: 100%;
+}
+
+#leftListIMC p{
+    margin-left: 5px;
+}
+
+hr{
+    margin: 2px 0;
+}
+
+.dotLineLeft{
+    border: 1px dashed;
+    border-style: none none dotted;
+}
+
+.dotLineRigth{
+    border: 1px dashed;
+    border-style: none none dotted;
+    width: 150px;
+}
+
+#containerListIMC{
+    margin: auto;
+    width: 82%;
+}
+
+#mobileImg{
+    display: none;
+}
+
+@media screen and (max-width: 2560px){
+    #divIMC{
+        width: 20%;
+    }
+}
+
+@media screen and (max-width: 1920px) {
+    #divIMC{
+        width: 27.7%;
+    }
+
+    #divMulher{
+        height: 100vh;
+        display: flex;
+        justify-content: flex-end;
+        align-items: flex-end;
+        margin-bottom: 200px;
+    }
+    
+    #divHomem{
+        height: 100vh;
+        display: flex;
+        justify-content: flex-end;
+        align-items: flex-end;
+        margin-bottom: 150px;
+    }
+}
+
+@media screen and (max-width: 1600px){
+    #divIMC{
+        bottom: 20px;
+    }
+}
+
+@media screen and (max-width: 1350px){
+    #listIMC p{
+        font-size: 12px;
+    }
+
+    #rightListIMC{
+        width: 100%;
+    }
+
+     .dotLineRigth{
+        width: 85%;
+    }
+
+    #divIMC h1{
+        font-size: 33px;
+    }
+
+    #divIMC h2{
+        font-size: 30px;
+        letter-spacing: 3px;
+        margin: 40px 0 20px 0;
+    }
+
+    #divIMC label{
+        margin-top: 30px;
+        font-size: 26px;
+    }
+
+    button{ 
+        height: 40px;
+        width: 30%;
+        font-size: 25px;
+        margin-top: 20px;
+    }
+
+    #divIMC{
+        padding-bottom: 40px;
+    }
+
+    #resultado p{
+        font-size: 12px;
+    }
+
+}
+
+@media screen and (max-width: 1366px){
+    #divIMC h2{
+        margin: 40px 0 10px 0;
+    }
+
+    #divIMC{
+        bottom:0px;
+    }
+}
+
+@media screen and (max-width: 1280px){
+    #divMulher{
+        height: 0;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 0;
+    }
+
+    #divHomem{
+        height: 0;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 0;
+    }
+
+    #divIMC{
+        bottom: 0px;
+    }
+}
+
+@media screen and (max-width: 1024px){
+    #divForm{
+        gap:10px;
+    }
+    #containerListIMC{
+        width: 85%;
+        margin: auto;
+    }
+
+    #listIMC p{
+        font-size: 9.6px;
+    }
+
+    #resultado{
+        margin-top: 15px;
+    }
+
+    #resultado p{
+        font-size: 11px;
+    }
+
+    #divMulher{
+        top:50px;
+    }
+
+    #divIMC{
+        width: 27.7%;
+        top: 0px;
+        bottom: 0px;
+        margin: 0 20px;
+        padding-bottom: 20px;
+    }
+
+    #divIMC h1{
+        font-size: 23px;
+    }
+
+    #divIMC h2{
+        font-size: 20px;
+        letter-spacing: 3px;
+        margin: 20px 0 10px 0;
+    }
+
+    button{ 
+        height: 40px;
+        width: 30%;
+        font-size: 20px;
+        margin-top: 15px;
+    }
+}
+
+@media screen and (max-width: 927px){
+    #divIMC label{
+        margin-top: 15px;
+        font-size: 18px;
+    }
+
+    input{
+        text-align: center;
+        font-size: 12px;
+        padding-left: 0px;
+        height: 30px;
+        background-color: #FBD9D0;
+        border: none;
+        border-radius: 5px;
+        color: #E95B38;
+    }
+    #containerListIMC{
+        width: 85%;
+        margin: auto;
+    }
+
+    #listIMC p{
+        font-size: 8.6px;
+    }
+
+    #resultado{
+        max-width: 80%;
+        height: 30px;
+    }
+    
+    #resultado p{
+        font-size: 9px;
+        line-height: 30px;
+    }
+
+    #divIMC{
+        margin: 0 20px;
+        padding-bottom: 20px;
+    }
+
+    #divIMC h1{
+        font-size: 23px;
+        letter-spacing: 3px;
+    }
+
+    button{ 
+        height: 30px;
+        width: 30%;
+        font-size: 14px;
+        margin-top: 10px;
+    }
+}
+
+@media screen and (max-width: 700px){
+    #divIMC{
+        width: 50%;
+    }
+
+    #divIMC h1{
+        font-size: 19px;
+        letter-spacing: 2px;
+    }
+
+    #divForm{
+        width: 100%;
+        display: block;
+        justify-content: center;
+    }
+    
+    .formFlex{
+        margin: auto;
+        width: 70%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .dotLineRigth{
+        border: 1px dashed;
+        border-style: none none dotted;
+        width: 80%;
+    }
+    
+    #containerListIMC{
+        margin: auto;
+        width: 100%;
+    }
+
+    #listIMC{
+        margin: auto;
+        width:80%;
+    }
+
+    #rightListIMC{
+        margin: auto;
+        width: 100%;
+    }
+
+    #leftListIMC{
+        margin: auto;
+        width: 100%;
+    }
+
+    #divMulher, #divHomem{
+        display: none;
+    }
+
+    #container{
+        flex-direction: column;
+        gap: 50px;
+    }
+
+    #mobileImg{
+        margin: 0 15px;
+        display: flex;
+        align-items: flex-end;
+        width: 60.1.1%;
+    }
+
+    #mobileImg img{
+        text-align: center;
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 540px){
+    #divIMC{
+        margin-top: 90px;
+    }
+
+    #container{
+        gap: 30px;
+    }
+}
+
+@media screen and (max-width: 414px){
+    #divIMC{
+        margin-top: 120px;
+        width: 68%;
+    }
+
+    #listIMC p{
+        font-size: 8.6px;
+    }
+
+    #listIMC{
+        width: 80%;
+    }
+
+    #resultado{
+        max-width: 71%;
+        height: 30px;
+    }
+
+    #mobileImg{
+        padding-bottom: 25px;
+    }
+}
+
+@media screen and (max-width: 411px){
+    #container{
+        gap: 20px;
+    }
+
+    #divIMC{
+        position: static;
+        margin-top: 0px;
+        width: 75%;
+        padding-bottom: 15px;
+    }
+
+    #mobileImg{
+        margin: 0px 15px;
+        padding-bottom: 0px;
+    }
+
+    #divIMC h2{
+        font-size: 20px;
+        letter-spacing: 3px;
+        margin: 10px 0 5px 0;
+    }
+}
+
+@media screen and (max-width: 375px){
+    #divIMC{
+        margin-top: 50px;
+    }
+
+    #container{
+        gap: 20px;
+    }
+
+    #mobileImg{
+        padding-bottom: 10px;
+    }
+}
+
+@media screen and (max-width: 360px){
+    #divIMC{
+        margin-top: 70px;
+    }
+
+    #mobileImg{
+        padding-bottom: 10px;
+    }
+}
+
+@media screen and (max-width: 320px){
+    #container{
+        gap:20px;
+    }
+
+    #divIMC{
+        margin-top: 100px;
+    }
+
+}
+
+@media screen and (max-width: 280px){
+    #mobileImg{
+        padding-bottom: 10px;
+    }
+
+    #divIMC{
+        margin-top: 10px;
+    }
+
+    #container{
+        gap: 20px;
+    }
+
+    #resultado p{
+        font-size: 8.5px;
+    }
+}
